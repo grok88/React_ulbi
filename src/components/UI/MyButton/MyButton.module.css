@@ -1,0 +1,6 @@
+.myBtn{
+    padding: 5px 15px;
+    border: 2px seagreen solid;
+    cursor: pointer;
+    color: seagreen;
+}
