@@ -4,3 +4,9 @@
     cursor: pointer;
     color: seagreen;
 }
+
+.current{
+    background-color: seagreen;
+    color: white;
+    /*border: 2px goldenrod solid;*/
+}

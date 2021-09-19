@@ -1,7 +1,11 @@
 import React from 'react';
 import MyButton from "../UI/MyButton/MyButton";
+import { useHistory } from "react-router-dom";
+
 
 const PostItem = ({post, deletePost}) => {
+    const history  = useHistory();
+
     return (
         <div className='post'>
             <div className="post__content">
@@ -9,6 +13,9 @@ const PostItem = ({post, deletePost}) => {
                 <div>
                     {post.body}
                 </div>
+            </div>
+            <div className="post__btn">
+                <MyButton onClick={() => history.push(`/posts/${post.id}`)}>Open</MyButton>
             </div>
             <div className="post__btn">
                 <MyButton onClick={() => deletePost(post.id)}>Delete</MyButton>
